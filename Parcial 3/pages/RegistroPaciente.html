@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+    
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+    <!-- Custom styles for this template -->
+    <link href="/styles/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Farmacio la Salvacion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index.html">Inico</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/Productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Registro</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+<div class="container mt-5">
+  
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/img/logo3.png" alt="" width="72" height="70">
+      <h2>Farmacia la Salvacion</h2>
+      <p class="lead">Se solicita completar los campos de manera correcta para llevar un registro de los pacientes atendidos.</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-12 col-lg-12">
+        <h4 class="mb-3">Registro de Paciente</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="idNombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="idNombre" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="idApellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="idApellido" placeholder="" value="" required>        
+            </div>
+
+            <div class="col-12">
+              <label for="idCorreo" class="form-label">Email</label>
+              <input type="email" class="form-control" id="idCorreo" placeholder="you@example.com">
+              
+            </div>
+
+            <div class="col-md-6">
+              <div class="mb-3">
+                <span class="fw-bold">Sexo</span>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="radio" class="form-check-input" name="idRdSexo" id="idMasculino">
+                <label class="form-check-label" for="idMasculino">Masculino</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="radio" class="form-check-input" name="idRdSexo" id="idFemenino">
+                <label class="form-check-label" for="idFemenino">Femenino</label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="idFecha" class="form-label">Fecha nacimiento</label>
+              <input type="date" class="form-control" id="idFecha">
+
+            </div>
+
+            <div class="col-12">
+                <label for="idObservacion" class="form-label">Observacion</label>
+                <input type="text" class="form-control" id="idObservacion" placeholder="" value="" required>        
+              </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="button" id="idBtnEnviar">Agregar Registro</button>
+         
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="shadow-lg p-3 mt-5 bg-body rounded">
+          <div class="col-12">
+              <h4>Pacientes Registrados</h4>
+              <div id="idDivResultado" class="fs-6 p-3"></div>
+          </div>
+      </div>
+  </div>
+
+    <hr class="my-4">
+
+  
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2022 Marco Gerardo Serrano Lopez SL182556</p>
+  </footer>
+</div>
+
+
+     <script src="/js/Registro.js"></script>
+
+  </body>
+</html>
